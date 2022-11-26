@@ -1,0 +1,22 @@
+.footer {
+  padding: 3rem;
+  background-color: var(--light-blue);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer > div {
+  min-width: 15rem;
+}
+
+.footer li {
+  list-style: none;
+}
+
+.footer ul {
+  margin: 0px;
+  padding: 0px;
+}

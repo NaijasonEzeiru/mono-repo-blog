@@ -1,0 +1,135 @@
+.navbarItems {
+  padding: 0 3rem;
+  height: 56px;
+  background-color: var(--light-blue);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  top: 0;
+  position: fixed;
+  font-size: 0.7rem;
+  z-index: 10;
+}
+
+/* .navbarItems * {
+  z-index: 0;
+} */
+
+.patty {
+  position: relative;
+  height: 2px;
+  width: 20px;
+  background-color: var(--color-blue);
+}
+
+.patty::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: var(--color-blue);
+}
+
+.patty::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: var(--color-blue);
+}
+
+.patty,
+.patty::after,
+.patty::before {
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.patty.active::before {
+  transform: rotate(-45deg) translate(-5px, -2px) scaleX(0.5);
+}
+
+.patty.active::after {
+  transform: rotate(45deg) translate(-5px, 2.3px) scaleX(0.5);
+}
+
+.hide {
+  display: none;
+}
+
+.navbarLogo {
+  margin: -29px;
+}
+
+.navMenu {
+  background-color: var(--light-blue);
+  width: 100%;
+  left: 0px;
+  position: absolute;
+  /* z-index: 2; */
+  top: 30px;
+  transition: all 0.5s ease;
+  flex-direction: column;
+}
+
+.navMenu.active {
+  transform: translate(-100%, 0);
+  transition: ease;
+}
+
+.navLinks {
+  text-align: left;
+  padding: 2rem 0;
+  width: 100%;
+  display: table;
+}
+
+.cart {
+  display: none;
+  color: #0e494e;
+  font-size: 35px;
+}
+
+@media screen and (min-width: 600px) {
+  .navbarLogo {
+    position: static;
+    transform: none;
+  }
+
+  .navMenu {
+    width: 50%;
+    position: static;
+    flex-direction: row;
+  }
+
+  .navLinks a {
+    text-decoration: none;
+    padding: 8px;
+    font-size: 15px;
+  }
+
+  .navLinks {
+    text-align: right;
+    padding: 0px;
+  }
+
+  .navLinks:hover {
+    color: black;
+  }
+
+  .navMenu.active {
+    display: flex;
+    transform: none;
+  }
+
+  .menuIcon {
+    display: none;
+  }
+  .cart {
+    display: block;
+  }
+}

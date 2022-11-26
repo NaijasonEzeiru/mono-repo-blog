@@ -1,0 +1,29 @@
+.flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.posts {
+  padding: 3rem;
+}
+
+.center {
+  text-align: center;
+  padding: 20px 0px;
+}
+
+.cat input {
+  border: 1px solid var(--color-blue);
+}
+
+@media (min-width: 800px) {
+  .cat {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+  }
+}

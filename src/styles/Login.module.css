@@ -1,0 +1,14 @@
+.submitButton {
+  color: white;
+  margin: 20px 0px;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  height: 30px;
+}
+
+.btn {
+  color: white;
+}

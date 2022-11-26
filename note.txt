@@ -1,0 +1,24 @@
+latest
+most read
+trending
+
+
+posts: commemts
+
+Footer 
+
+Designed by <a>Chibuike Ezeiru<a/> 
+contact information: address phone email 
+
+terms of use
+privacy policy
+
+
+
+categories: tech, programming, religion, crypto, business
+
+
+npm i @trpc/client @trpc/server @trpc/react @trpc/next react-query superjson jotai jsonwebtoken cookie
+
+npm i @types/jsonwebtoken @types/cookie -D
+
